@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['*',
     'localhost',
     '127.0.0.1',
     'your-domain.com',
+    '.trycloudflare.com'
 ]
 
 #defang end
