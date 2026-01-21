@@ -1,0 +1,284 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- title -->
+{% block title %}
+Service page
+{% endblock %}
+<!-- title -->
+
+<!-- services start-->
+{% block main %}
+
+<div class="row m-0" id="bg11">
+    <div class="col-sm-12 text-white py-5 backdrop2">
+        <div class="row" data-aos="zoom-out">
+            <div class="col-sm-11 mx-auto text-center">
+                <p style="color: #ff6900;">PROFESSIONAL CONSTRUCTION SERVICES</p>
+                <p class="display-3"><b><b>Building Excellence, <br>
+                            Crafting Dreams</b></b></p>
+                <p class="my-4 pb-4" style="font-size: large;">We offer comprehensive construction solutions tailored to
+                    your
+                    unique needs, <br> delivered with exceptional craftsmanship and attention to every detail.</p>
+                <p class="ps-2">
+                    <a href="{% url 'services' %}" style="text-decoration:none;"><button
+                            class="btn btn1 btnq rounded-3 text-light">Explore Services <i
+                                class="fa-solid fa-angle-right btn0"></i></button></a>
+                    <a href="{% url 'contact' %}" style="text-decoration:none;"><button
+                            class="btn  btn2 rounded-3 text-light">Request a Quote <i
+                                class="fa-solid fa-angle-right btn0"></i></button></a>
+                </p>
+            </div>
+        </div>
+        <!-- OUR SERVICES start -->
+        <div class="row-0 dark">
+            <div class="col-sm-11 mx-auto my-5 text-white text-center pt-5" data-aos="zoom-out">
+                <p style="color: #ff6900;">OUR SERVICES</p>
+                <h2><b>Comprehensive Construction Solutions</b></h2>
+                <p style="color: rgb(151, 151, 151);">We offer a wide range of construction services
+                    tailored to
+                    meet
+                    the unique needs of each project, <br> delivered with exceptional craftsmanship and
+                    attention to
+                    detail.</p>
+            </div>
+            <div class="col-sm-11 mx-auto">
+                <div class="row pt-2 text-white">
+                    <div class="col-sm-12 text-center">
+                        <div class="row" style="row-gap: 30px;">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card h-100 w-100 bg-dark p-4 text-white transform1">
+                                    <p><i class="fa-solid fa-house-chimney-window fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Residential Construction
+                                    </h4>
+                                    <p>From custom homes to multi-family units, we build comfortable,
+                                        energy-efficient
+                                        residential spaces <br> designed for modern living.
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Custom Home Building
+                                    </p>
+                                    <p style="padding-right: 15px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Multi-Family Housing</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Energy-Efficient Design
+                                    </p>
+                                    <a href="" style="color: #ff6900; text-decoration: none;">Learn More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card h-100 w-100 p-4 bg-dark text-white transform1">
+                                    <p><i class="fa-solid fa-building fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Commercial Buildings
+                                    </h4>
+                                    <p>Office spaces, retail centers, and industrial facilities <br> built to the
+                                        highest
+                                        standards of quality <br> and functionality.</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Office Complexes</p>
+                                    <p style="padding-left: 8px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Retail & Hospitality</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Industrial Facilities
+                                    </p>
+                                    <a href="" style="color: #ff6900; text-decoration: none;">Learn More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card h-100 w-100 p-4 100 bg-dark text-white transform1">
+                                    <p><i class="fa-solid fa-palette fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Interior Design
+
+                                    </h4>
+                                    <p>Transform your space with our expert interior design <br> services, creating
+                                        environments that inspire <br> and delight.</p>
+
+                                    <p style="padding-right: 20px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Space Planning</p>
+                                    <p style="padding-left: 10px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Custom Furnishings</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Material Selection</p>
+                                    <a href="" style="color: #ff6900; text-decoration: none;">Learn More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card h-100 w-100 p-4 100 bg-dark text-white transform1">
+                                    <p><i class="fa-solid fa-hammer fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Renovation & Remodeling
+                                    </h4>
+                                    <p>Breathe new life into existing structures with our <br> comprehensive
+                                        renovation and
+                                        remodeling services.</p>
+                                    <p style="padding-left: 38px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Kitchen & Bath Remodels</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Historic Renovations
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Commercial Retrofits
+                                    </p>
+                                    <a href="" style="color: #ff6900; text-decoration: none;">Learn More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card h-100 w-100 p-4 100 bg-dark text-white transform1">
+                                    <p><i class="fa-solid fa-ruler fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Architectural Design
+                                    </h4>
+                                    <p>Innovative architectural solutions that balance aesthetics, functionality,
+                                        and
+                                        sustainability.</p>
+                                    <p style="padding-left: 45px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Concept Development</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> 3D Visualization</p>
+                                    <p style="padding-left: 20px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Sustainable Design</p>
+                                    <a href="" style="color: #ff6900; text-decoration: none;">Learn More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card h-100 w-100  px-4 py-2 h-100 bg-dark text-white transform1">
+                                    <p><i class="fa-solid fa-book-open-reader fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Construction Management
+                                    </h4>
+                                    <p>Expert oversight of your project from concept to completion, ensuring
+                                        efficiency and
+                                        quality at every stage.</p>
+                                    <p><i class="fa-solid fa-check" style="color: #ff6900;"></i> Project Planning</p>
+                                    <p style="padding-left: 35px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Budget Management</p>
+                                    <p style="padding-right: 7px;"><i class="fa-solid fa-check"
+                                            style="color: #ff6900;"></i> Quality Control</p>
+                                    <a href="" style="color: #ff6900; text-decoration: none;">Learn More <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUR SERVICES end -->
+        <!-- FEATURED SERVICE start -->
+        <div class="row my-5">
+            <div class="col-sm-11 my-5 mx-auto">
+                <div class="row" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 text-center">
+                        <p style="color: #ff6900;">FEATURED SERVICE</p>
+                        <h2><b>Sustainable Building Practices</b></h2>
+                    </div>
+
+                    <div class="col-12 col-sm-6 text-center pt-4">
+                        <p style="color:gainsboro;">We're committed to environmentally responsible
+                            construction. Our
+                            sustainable building practices incorporate the latest green technologies and materials to
+                            minimize environmental impact while maximizing energy efficiency and occupant comfort.</p>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <i class="fa-regular fa-sun fa-spin fa-2xl mb-4" style="color: #ff6900;"></i>
+
+                                <p><b>Energy Efficiency</b> <br> <span style="color: gainsboro;">Solar integration and
+                                        passive design strategies
+                                    </span></p>
+                            </div>
+
+                            <div class="col-sm-12 py-1">
+                                <i class="fa-solid fa-droplet fa-bounce fa-2xl mb-4" style="color: #ff6900;"></i>
+
+                                <p><b>Water Conservation</b> <br> <span style="color: gainsboro;">Rainwater harvesting
+                                        and low-flow fixtures</span></p>
+                            </div>
+
+                            <div class="col-sm-12 py-1">
+                                <i class="fa-solid fa-rotate fa-spin fa-2xl mb-4" style="color: #ff6900;"></i>
+                                <p><b>Recycled Materials</b> <br> <span style="color: gainsboro;">Responsibly sourced
+                                        and eco-friendly building materials</span></p>
+                            </div>
+                        </div>
+                        <button class="btn btn1 rounded-3 mt-5 btnQ" style="width:85%" type="submit"><b>Learn About
+                                Our Green Initiatives</b> <i class="fa-solid fa-angle-right btn0"></i></button>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mt-5">
+                        <div class="row g-4" data-aos="zoom-in" data-aos-duration="5000">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tilt">
+                                <img src="{% static 'images/blueprint.webp' %}" style="border: 10px solid white;"
+                                    class="img-fluid card1 h-100 w-100 h-100" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tilt" id="bg8">
+                                <img src="{% static 'images/Sustainable-Community-Center.jpg' %}"
+                                    style="border: 10px solid white;" class="img-fluid card1 h-100 w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURED SERVICE end -->
+
+        <!--   OUR PROCESS start -->
+        <div class="row text-center" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-sm-11 mx-auto">
+                <h6 style="color: #ff6900;">&#8213;&nbsp; OUR PROCESS &nbsp;&#8213;</h6>
+                <h2><b>How We Bring Your Vision to Life</b></h2>
+                <p style="color: gainsboro;">We follow a proven methodology to ensure your project is completed on time,
+                    within budget, and exceeds your expectations.</p>
+            </div>
+            <div class="col-sm-11 mb-5 mt-4 mx-auto">
+                <div class="row g-4" data-aos="zoom-in" data-aos-duration="5000">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 transform1">
+                        <div class="card h-100 w-100 bg-dark p-5 h-100 transform1">
+                            <p class="p-3"><i class="fa-solid fa-1 fa-2xl ps-2" style="color: #ff6900;"></i>
+                                <i class="fa-solid fa-mug-hot fa-2xl pe-2" style="color: #ff6900;"></i>
+                            </p>
+                            <h4 style="color: white;"><b>Project Planning</b></h4>
+                            <p style="color: gainsboro;">Create your vision with our intuitive tools. Define
+                                requirements, set budgets, and establish timelines in a collaborative environment.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                        <div class="card h-100 w-100 bg-dark p-5 100 transform1">
+                            <p class="p-3"><i class="fa-solid fa-2 fa-2xl ps-2" style="color: #ff6900;"></i>
+                            <i class="fa-solid fa-pen-to-square fa-2xl pe-2" style="color: #ff6900;"></i></p>
+                            <h4 style="color: white;"><b>Team Assembly</b></h4>
+                            <p style="color: gainsboro;">Connect with architects, contractors, and suppliers through our
+                                verified network to build your ideal construction team.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                        <div class="card h-100 w-100 bg-dark p-5 100 transform1">
+                            <p class="p-3"><i class="fa-solid fa-3 fa-2xl  ps-2" style="color: #ff6900;"></i>
+                            <i class="fa-solid fa-wrench fa-2xl  pe-2" style="color: #ff6900;"></i></p>
+                            <h4 style="color: white;"><b>Project Execution</b></h4>
+                            <p style="color: gainsboro;">Monitor progress in real-time, approve changes instantly, <br>
+                                and maintain clear communication throughout construction.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                        <div class="card h-100 w-100 bg-dark p-5 100 transform1">
+                            <p class="p-3"><i class="fa-solid fa-4 fa-2xl ps-2" style="color: #ff6900;"></i>
+                            <i class="fa-regular fa-circle-check fa-2xl pe-2" style="color: #ff6900;"></i></p>
+
+                            <h4 style="color: white;"><b>Project Completion</b></h4>
+                            <p style="color: gainsboro;">Receive comprehensive documentation, warranty information, and
+                                maintenance schedules for your new construction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--   OUR PROCESS  end -->
+
+    </div>
+
+</div>
+<!-- services end-->
+{% endblock %}

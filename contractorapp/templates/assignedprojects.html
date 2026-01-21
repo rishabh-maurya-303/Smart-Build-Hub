@@ -1,0 +1,36 @@
+{% extends 'contractorbase.html' %}
+{% load static %}
+
+{% block contractorbase %}
+<h3 class="text-light">Contractor Assigned Projects</h3>
+{% if projects %}
+<div class="table-responsive">
+<table class="table">
+    <tr>
+        <th class="ht hr">S.No</th>
+        <th class="ht hr">Project Name</th>
+        <th class="ht hr">Homeowner Name</th>
+        <th class="ht hr">Project Status</th>
+        <th class="ht hr">Progress (in %)</th>
+        <th class="ht hr">Start DateS</th>
+        <th class="ht hr">Action</th>
+    </tr>
+    {% for p in projects %}
+    <tr>
+        <td class="ht hr">{{forloop.counter}}</td>
+        <td class="ht hr">{{p.projectname}}</td>
+        <td class="ht hr">{{p.homeowner.name}}</td>
+        <td class="ht hr">{{p.status}}</td>
+        <td class="ht hr">{{p.progress}}</td>
+        <td class="ht hr">{{p.start_date}}</td>
+        <td class="ht hr">
+            <a href="{% url 'addprogress' id=p.id %}" class="btn" style="background-color: #ff6900; color: white;">Add Progress</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% else %}
+<p class="text-light text-center mt-4">No Projects assigned to you yet</p>
+{% endif %}
+{% endblock %}

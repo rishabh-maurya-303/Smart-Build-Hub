@@ -1,0 +1,186 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.bg1 {
+   background-image: url('../images/bg/12.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.bd1{
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.b1 {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+   background-size: cover;
+   /* Adjust as needed */
+   background-position: center;
+   /* Adjust as needed */
+}
+
+.btn1 {
+   background-color: #ff6900;
+   color: white;
+}
+
+.btn1:hover {
+   background-color: #ff6a00a4;
+   color: white;
+}
+
+.id1 {
+   color: white;
+}
+
+.ida {
+   color: white !important;
+}
+
+.ida:hover {
+   color: black !important;
+}
+
+.card {
+   
+   background-color: #1e1e1e !important;
+   border: 1px solid transparent;
+   background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+              linear-gradient(to right, orange, purple) border-box;
+   border-radius: 12px;
+   box-shadow: 0 0 6px rgba(255, 165, 0, 0.3);
+   transition: .5s;
+   display: grid;
+   gap: .3rem;
+   padding: 1rem;
+   height: auto; 
+   padding: 1rem 1.2rem;
+   font-size: 0.9rem;
+   border-radius: 0px 20px 0px 20px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.hv1 {
+   color: white !important;
+   transition: .5s;
+
+}
+
+.hv1:hover {
+   color: #ff6900 !important;
+   transform: scale(1.1,1.1);
+}
+
+.hv2:hover {
+   background-color: #ff690080;
+   border-right: 2px solid #ff6900;
+   /* box-shadow: 0 2px 6px #ff6900,
+         0 2px 2px #ff6900;  */
+}
+
+.hv3 {
+   background-color: #1c1d1c;
+   transition: 1s;
+}
+
+.hv3:hover {
+   background-color: #ff690080 !important;
+   border-right: 2px solid #ff6900;
+}
+
+.hv4 {
+   background-color: #393a3b !important;
+   color: white;
+   transition: .5s;
+}
+
+.hv4:hover {
+   background-color: #ff6900 !important;
+   color: black;
+}
+
+
+
+/* Highlight active menu item in orange */
+.pc-item.active > .pc-link {
+  background-color: #ff6b01d7 !important;  /* Orange highlight */
+  color: #ffffff !important;             /* White text */
+  font-weight: 600;
+}
+
+/* Make icons white inside the active item */
+.pc-item.active i {
+  color: #ffffff !important;
+}
+
+
+.place{
+   margin-bottom: 30px;
+   border:2px solid #ff6900 ;
+}
+
+/* full card */
+ .card-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.2);
+  /* background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+              linear-gradient(to right, orange, purple) border-box; */
+  margin-top: 40px;
+   transition: 0.5s ease;
+} 
+ .card-form:hover {
+  transform: scale(1.05);
+  background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+              linear-gradient(to right, orange, purple) border-box; 
+  box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
+} 
+
+/* .card-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:1px;
+  padding-bottom:20px;
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.2);
+  margin-top: 3%;
+} */
+
+.hr{
+   transition: .5s;
+}
+.hr:hover{
+   transform: scale(1.02);
+   color: #ff6900;
+}
+
+.ht{
+   transition: .5s;
+   color: white !important;
+}
+.ht:hover{
+   transform: scale(1.02);
+   color: #ff6900 !important;
+}
+
+.place{
+   border: 2px solid #ff6900 !important;
+}
+
+.form-control{
+   border: 2px solid #ff6900 !important;
+}
+
+ /* .table-responsive::-webkit-scrollbar{
+ scrollbar-track-color: #ff6900 !important;
+}  */

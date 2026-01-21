@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- title -->
+{% block title %}
+sign up
+{% endblock %}
+<!-- signup -->
+{% block main %}
+<div class="row my-5">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-11 col-sm-8 col-md-8 card mx-auto py-5">
+                <div class="row text-white">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-5">
+                        <h1>Create <span style="color: #ff6900;">Account</span></h1>
+                        <p>
+                            Join our platform to access exclusive construction services and project management tools.
+                        </p>
+                        <div class="row">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 py-2 pb-3">
+                                <i class="fa-solid fa-circle fa-2xl" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ps-3">
+                                <p><b>Secure Access</b>Your data is always protected</p>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 py-2 pb-3">
+                                <i class="fa-solid fa-circle fa-2xl" style="color: #ff6900;"></i>
+                            </div>
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 ps-3">
+                                <p><b>Quick Setup</b>Get started in less than 2 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="row text-center rounded-3 py-2" style="background-color: rgba(0, 0, 0, 0.2);">
+                            <div class="col-6 col-sm-6"><a href="{% url 'signin' %}"
+                                    style="text-decoration: none; color: #ff6900;">
+                                    <h4>Sign In</h4>
+                                </a></div>
+                            <div class="col-6 col-sm-6"><a href="{% url 'signup' %}"
+                                    style="text-decoration: none; color: #ffffff;">
+                                    <h4>Sign Up</h4>
+                                </a></div>
+                        </div>
+                        <h2 class="my-4"><b>Create Account</b></h2>
+
+                        {% if messages %}
+                        {% for m in messages %}
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{m}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        {% endfor %}
+                        {% endif %}
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="row" style="row-gap: 15px;">
+                                <div class="col-sm-12 mb-3">
+                                    <input type="text" class="form-control" placeholder="Full Name" name="name"
+                                        required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Contact Number"
+                                        name="contactno" required>
+                                </div>
+                                <div class="col-sm-12 my-3">
+                                    <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                </div>
+
+                                <span>User Type</span>
+                                <div class="col-sm-12">
+                                    <select class="form-select" name="usertype" required>
+                                        <option selected disabled>Select Usertype</option>
+                                        <option value="homeowner">Home Owner</option>
+                                        <option value="contractor">Contractor</option>
+                                    </select>
+                                </div>
+
+                                <div class="col my-3">
+                                    <input type="password" class="form-control" placeholder="Password" name="password"
+                                        required>
+                                </div>
+                            </div>
+                            <button class="btn btn1 rounded-3 my-4" style="width: 100%;" type="submit">Create
+                                Account</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+<!-- signup start-->

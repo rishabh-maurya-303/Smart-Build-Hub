@@ -1,0 +1,39 @@
+{% extends 'adminbase.html' %}
+
+{% block admin %}
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="mt-4 mb-3" style="color: #ff6900;">Enquiries</h3>
+        <div class="table-responsive">
+            <table class="table">
+                <tr class="hr">
+                    <th class="ht">S.No</th>
+                    <th class="ht">Name</th>
+                    <th class="ht">Contact No</th>
+                    <th class="ht">Email</th>
+                    <th class="ht">Subject</th>
+                    <th class="ht">Message</th>
+                    <th class="ht">Enquiry Date</th>
+                    <th class="ht">Action</th>
+                </tr>
+                {% for e in enqs %}
+                <tr class="hr">
+                    <td class="ht">{{e.id}}</td>
+                    <td class="ht">{{e.name}}</td>
+                    <td class="ht">{{e.contactno}}</td>
+                    <td class="ht">{{e.email}}</td>
+                    <td class="ht">{{e.subject}}</td>
+                    <td class="ht">{{e.message}}</td>
+                    <td class="ht">{{e.enqdate}}</td>
+                    <td class="ht">
+                        <a href="{% url 'delenq' id=e.id %}" class="btn btn1"><i
+                                class="fa-solid fa-trash fa-2xl"></i>&nbsp;Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

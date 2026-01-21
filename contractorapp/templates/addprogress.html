@@ -1,0 +1,37 @@
+{% extends 'contractorbase.html' %}
+{% load static %}
+
+{% block contractorbase %}
+<h3 class="text-light">Progress Update For <span style="color: #ff6900;">{{project.projectname}}</span></h3>
+<form method="post" enctype="multipart/form-data" class="mx-auto w-75">
+    {% csrf_token %}
+    <div class="mt-3">
+        <label for="ut" class="form-label text-light">Update Text</label>
+        <textarea name="update_text" id="ut" class="form-control"></textarea>
+    </div>
+    <div class="mt-3">
+        <label for="f" class="form-label text-light">Upload File</label>
+        <input type="file" name="image" id="f" class="form-control" required>
+    </div>
+    <div class="mt-3">
+        <label for="d" class="form-label text-light">Progress Percent</label>
+        <input type="number" value="{{project.progress}}" name="progress_percent" id="d" class="form-control" required>
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn" style="background-color: #ff6900; color: white;">Submit</button>
+    </div>
+</form>
+
+
+<!-- <script>
+    function check()
+    {
+        var old = '{{project.progress}}';
+        var progress = document.getElementById('id').value;
+        if (progress < old) 
+        alert('Progress cannot be less than previous progress')
+        document.getElementById('d').value = old;
+    }
+</script> -->
+
+{% endblock %}

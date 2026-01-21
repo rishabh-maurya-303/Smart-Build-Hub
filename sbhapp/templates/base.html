@@ -1,0 +1,322 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="{% static 'images/smartbuild_Logo_dark.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>{% block title %}
+        {% endblock %}
+    </title>
+
+
+    <!-- media queries for nav -->
+    <style>
+
+        /* 1st */
+
+        @media screen and (max-width:992px) {
+        
+            .center-any{
+                text-align: center;
+            }
+
+        #our_project_text{
+            text-align: center;
+        }
+
+        #all_project{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .comments_pic{
+            border-radius:50%;
+            height: 40px;
+            width: 40px;
+            
+        }
+
+                .comment_name{
+           text-align: center;
+        }
+
+        .card{
+            padding: 5% !important;
+        }
+
+        }
+
+
+/* 2nd */
+          @media screen and (min-width:992px) {
+
+            #all_project{
+                text-align: end;
+            }
+            #our_project_text{
+            text-align: end;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+                .comments_pic{
+            border-radius:50%;
+            height: 35px;
+             width: 40px;
+        }
+
+        .comment_name{
+           text-align: left;
+        }
+
+        .signq{
+            margin-top: 45%;
+        }
+          }
+
+/* 3rd */
+          @media screen and (max-width:576px) {
+            #dev{
+                margin-bottom: 40px;
+            }
+
+            .our_journey{
+                text-align: center;
+            }
+
+          }
+
+
+          /* 4th */
+
+           @media screen and (max-width:421px) {
+
+            .btnq{
+                margin-bottom: 20px;
+            }
+
+           }
+
+            @media screen and (min-width:576px) {
+                                .comments_pic{
+            border-radius:50%;
+            height: 35px;
+             width: 40px;
+        }
+
+        .comment_name{
+           text-align: left;
+        }
+    }
+
+
+    @media screen and (min-width:576px) and (max-width:992px) {
+                        .btnQ{
+            font-size: 85% !important;
+        }
+    }
+
+
+    @media screen and (max-width:576px) {
+        .contact_icons{
+            padding-right:46%;
+        }
+    }
+          
+    </style>
+
+
+</head>
+
+<body id="bg3">
+    <div class="container-fluid">
+        <!-- nav start -->
+        <nav class="navbar sticky-top navbar-expand-md row p-0" id="bg4">
+            <div class="container-fluid text-center" style="position: relative;">
+                <div class="col text-start ps-5">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img src="{% static 'images/smartbuild_Logo_dark.png' %}" alt="" class="img-fluid"
+                            style="height: 80px;">
+                    </a>
+                </div>
+
+                <!-- Toggler button -->
+                <div class="col" style="position: absolute; left: 44%; top: 20px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav1" aria-current="page" href="{% url 'index' %}">Home</a>
+                        <a class="nav-link nav1" href="{% url 'services' %}">Services</a>
+                        <a class="nav-link nav1" href="{% url 'projects' %}">Projects</a>
+                        <a class="nav-link nav1" href="{% url 'about' %}">About</a>
+                        <a class="nav-link nav1" href="{% url 'contact' %}">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col" style="position: absolute; right:6%; top: 20px;">
+                    <a href="{% url 'signin' %}"><button class="btn text-white transform"
+                            style="background-color: #ff6900;">Sign In</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- nav end -->
+        {% block main %}
+
+        {% endblock %}
+        <!-- footer start -->
+        <div class="row" id="bg5">
+            <div class="col-sm-12" id="bg5a">
+                <footer class="row">
+                    <div class="col-10 col-sm-11 col-md-10 col-lg-10 col-xl-11 mx-auto">
+                        <div class="row mt-5 py-4 g-4">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in">
+                                <div class="card bg-dark mb-3 transform1 transform3 h-100 text-center"
+                                    style=" color: gainsboro;">
+                                    <div class="card-header"><img src="{% static 'images/smartbuild_Logo_dark.png' %}"
+                                            alt="" height="80px"></div>
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: small; justify-content: center;">An
+                                            innovative
+                                            digital platform transforming traditional home construction methods through
+                                            seamless
+                                            collaboration between homeowners, architects, contractors, and suppliers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in">
+                                <div class="card bg-dark mb-3 h-100 transform4" style="color: gainsboro;">
+                                    <div class="card-header border-0 mt-3" style="background-color: #673AB7;">Quick
+                                        Links</div>
+                                    <div class="card-body">
+                                        <!-- <h5 class="card-title">Dark card title</h5> -->
+                                        <p class="card-text">
+                                            <li class="li1 my-2"><a href="{% url 'index' %}" class="w">Home</a></li>
+                                            <li class="li1 my-2"><a href="{% url 'services' %}" class="w">Services</a>
+                                            </li>
+                                            <li class="li1 my-2"><a href="{% url 'projects' %}" class="w">Projects</a>
+                                            </li>
+                                            <li class="li1 my-2"><a href="{% url 'about' %}" class="w">About Us</a></li>
+                                            <li class="li1 my-2"><a href="{% url 'contact' %}" class="w">Contact</a>
+                                            </li>
+                                            <li class="li1 my-2"><a href="" class="w">Blog</a></li>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in">
+                                <div class="card bg-dark mb-3 h-100 transform3" style="color: gainsboro;">
+                                    <div class="card-header border-0 mt-3" style="background-color: #ff6900;">Our
+                                        Services</div>
+                                    <div class="card-body">
+                                        <!-- <h5 class="card-title">Dark card title</h5> -->
+                                        <p class="card-text">
+                                            <li class="li2 my-2">Project Management</li>
+                                            <li class="li2">Architecture Planinng</li>
+                                            <li class="li2 my-2">Contractor Collaboration</li>
+                                            <li class="li2">Supply Chain Solutions</li>
+                                            <li class="li2 my-2">Sustainability Consulting</li>
+                                            <li class="li2">Client Portal Access
+                                            </li>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in">
+                                <div class="card bg-dark mb-3 transform4 h-100" style=" color: gainsboro;">
+                                    <div class="card-header border-0 mt-3" style="background-color: #673AB7;">Contact Us
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- <h5 class="card-title">Dark card title</h5> -->
+                                        <p class="card-text">
+                                            <li class="li1 my-2">123 Construction Avenue, <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; Building District, CA 90210</li>
+                                            <li class="li1 mb-2">info@smartbuildhub.com</li>
+                                            <li class="li1">+91 7007575886</li>
+                                        </p>
+                                        <li class="li1">Subscribe to our newsletter
+                                            <div class="form-control p-0 border-secondary mt-2"
+                                                style="display: flex; align-items: center; justify-content: center;">
+
+                                                <input type="text" class="form-control rounded-end-0 border-0 bg-dark"
+                                                    placeholder="Your Email" aria-label="" id="place">
+                                                <button class="btn border-0 rounded-start-0"
+                                                    style="background-color: #ff6900;"><i
+                                                        class="fa-solid fa-arrow-right fa-fade fa-2xl text-white"></i></button>
+                                            </div>
+                                        </li>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 mx-auto mb-5 mt-3" data-aos="zoom-in">
+                        <div class="map-container">
+                            <iframe class="dark-map transform1"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7112.552489069841!2d80.99890800000001!3d26.95815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bff2addd9b239%3A0xc21a9bbd557936ec!2sIntegral%20University!5e0!3m2!1sen!2sin!4v1753346562080!5m2!1sen!2sin"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                class="rounded-3" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                        </div>
+                        <hr style="color: white;" class="my-5">
+                    </div>
+                    <div class="row text-secondary mx-auto mb-5">
+                        <div class="col-sm-6 text-center px-1" id="dev"><small>&copy; 2025 SmartBuild Hub. Designed and
+                                Developed by
+                                <a href="{% url 'aboutdev' %}" style="color: #ff6900; text-decoration: none;">Rishabh
+                                    Maurya</a>.</small>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class=" row g-4 text-center">
+                                <div class="col-sm-4"><a href=""
+                                        style="text-decoration: none; color: gray; font-size: small;">Privacy
+                                        Policy</a></div>
+                                <div class="col-sm-4"><a href=""
+                                        style="text-decoration: none; color: gray; font-size: small;">Terms
+                                        of
+                                        Service</a></div>
+                                <div class="col-sm-3"><a href=""
+                                        style="text-decoration: none; color: gray; font-size: small;">Cookie
+                                        Policy</a></div>
+                                <div class="col-sm-1"><a href="{% url 'adminlogin' %}"
+                                        style="text-decoration: none; color: gray; font-size: small;"><i
+                                            class="fa-solid fa-user-tie fa-2xl"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <a href="{% url 'contact' %}"><button class="btn sticky-bottom text-light rounded-5 c">📞 Contact Us</button></a>
+
+    <!-- footer end -->
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/js.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>

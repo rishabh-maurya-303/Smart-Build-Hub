@@ -1,0 +1,41 @@
+{% extends 'contractorbase.html' %}
+
+{% block contractorbase %}
+
+<h3 class="text-light text-center mb-4">Edit Profile</h3>
+<div class="row">
+    <div class="col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 card px-5 pt-5 pb-4 mx-auto rounded-0">
+        <form method="post" class="row g-4" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="col-sm-6">
+        <label for="n" class="form-lable text-light">Name:</label>
+        <input type="text" value="{{contractor.name}}" name="name" id="n" class="form-control">
+    </div>
+    <div class="col-sm-6">
+        <label for="no" class="form-lable text-light">Contact Number:</label>
+        <input type="text" value="{{contractor.contactno}}" name="contactno" id="no" class="form-control">
+    </div>
+    <div class="col-sm-6">
+        <label for="e" class="form-lable text-light">Email:</label>
+        <input type="text" value="{{contractor.email}}" name="email" id="e" class="form-control" disabled>
+    </div>
+    <div class="col-sm-6">
+        <label for="p" class="form-lable text-light">Choose Profile Picture:</label>
+        <input type="file" name="profile" id="p" class="form-control">
+    </div>
+    <div class="col-sm-12">
+        <label for="a" class="form-lable text-light">Enter Full Address:</label>
+        <textarea name="address" id="a" class="form-control">{{contractor.address}}</textarea>
+    </div>
+    <div class="col-sm-12">
+        <label for="b" class="form-lable text-light">Bio:</label>
+        <textarea name="bio" id="b" class="form-control">{{contractor.bio}}</textarea>
+    </div>
+    <div class="col-sm-12 text-center">
+        <button class="btn btn-success" type="submit">Update</button>
+    </div>
+</form>
+    </div>
+</div>
+
+{% endblock %}

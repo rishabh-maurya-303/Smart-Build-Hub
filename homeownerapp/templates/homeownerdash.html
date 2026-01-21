@@ -1,0 +1,92 @@
+{% extends 'homeownerbase.html' %}
+{% block title %}
+Homeowner Dashboard
+
+{% endblock %}
+
+{% block homeownerbase %}
+<h4 class="text-light mt-4"><span style="color: #ff6900;">Welcome, </span>{{name}}</h4>
+<hr>
+<div class="row g-4 mt-2">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="{% url 'homeownerviewprojects' %}">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-diagram-project fa-xl"></i> Total Projects</b></b></p>
+            <hr class="m-0">
+            <p style="font-size: 40px;">{{tp}}</p>
+            <p>All projects created by you</p>
+        </div>
+        </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="{% url 'runningprojects' %}">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Onging Projects</b></b></p>
+            <hr class="m-0">
+            <p style="font-size:40px;">{{top}}</p>
+            <p>Projects under construction & designing</p>
+        </div>
+        </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="{% url 'homeownercompletedprojects' %}">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-check fa-xl"></i> Completed Projects</b></b></p>
+            <hr class="m-0">
+            <p style="font-size:40px;">{{tcp}}</p>
+            <p>Successfully finished projects</p>
+        </div>
+        </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Pending Approvals</b></b></p>
+            <hr class="m-0">
+            <p style="font-size:40px;">{{tpa}}</p>
+            <p>Awating your decision</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-diagram-project fa-xl"></i> Planned project</b></b></p>
+            <hr class="m-0">
+            <p style="font-size: 40px;">{{tpp}}</p>
+            <p>All planed projects</p>
+        </div>
+        </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Designing Phase</b></b></p>
+            <hr class="m-0">
+            <p style="font-size:40px;">{{dp}}</p>
+            <p>Projects under designing phase</p>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b><i class="fa-solid fa-check fa-xl"></i> Delayed Project</b></b></p>
+            <hr class="m-0">
+            <p style="font-size:40px;">{{tdp}}</p>
+            <p>Total delayed project</p>
+        </div>
+        </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+        <a href="">
+            <div class="card text-light h-100">
+            <p class="mt-2"><b><b>❌ Cancelled Project</b></b></p>
+            <hr class="m-0">
+            <p style="font-size:40px;">{{tpc}}</p>
+            <p>Total project cancelled</p>
+        </div>
+        </a>
+    </div>
+</div>
+{% endblock %}
+

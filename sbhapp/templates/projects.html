@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- title -->
+{% block title %}
+Our Project Portfolio
+{% endblock %}
+<!-- title -->
+
+<!-- services start-->
+{% block main %}
+<!-- EXCELLENCE IN CONSTRUCTION start-->
+<div class="row" id="bg9">
+    <div class="col-sm-12 py-5 backdrop1">
+        <div class="row">
+            <div class="col-sm-11 text-white mx-auto ">
+                <div class="row text-center" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12">
+                        <h6 style="color:#ff6900;">&#8213;&nbsp;EXCELLENCE IN CONSTRUCTION</h6>
+                        <p class="display-3 my-4"><b><b>Our Featured Projects</b></b></p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p style="color: gainsboro; font-size: larger;">Browse our portfolio of exceptional construction
+                            projects spanning commercial, residential, and public sectors. <br> Each project reflects
+                            our
+                            commitment to quality and innovation.</p>
+                    </div>
+                    <div class="row mx-auto my-5 g-4">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="zoom-in">
+                            <div class="card py-5 h-100 w-100 text-center text-white transform3 border1"
+                                style="background-color: #ff6900;">
+                                <p class="text-center pe-3"><i class="fa-solid fa-list-check fa-2xl"></i></p>
+                                <h4><b>250+</b></h4>
+                                <p>Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                            <div class="card py-5 h-100 w-100 text-center text-white transform4 border1"
+                                style="background-color: #ff6900;">
+
+                                <p class="text-center pe-3"><i class="fa-solid fa-trophy fa-2xl"></i></p>
+                                <h4><b>30+</b></h4>
+                                <p>Years Experience </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                            <div class="card py-5 h-100 w-100 text-center text-white transform3 border1"
+                                style="background-color: #ff6900;">
+                                <p class="text-center pe-3"><i class="fa-solid fa-users fa-2xl"></i></p>
+                                <h4><b>120+</b></h4>
+                                <p>Expert Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                            <div class="card py-5 h-100 w-100 text-center text-white transform4 border1"
+                                style="background-color: #ff6900;">
+                                <p class="text-center pe-3"><i class="fa-solid fa-face-smile fa-2xl"></i></p>
+                                <h4><b>98%</b></h4>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-sm-12 mx-auto">
+                            <div class="row g-4">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 h-100 w-100 bg-dark text-white p-0 transform2" id="image1a">
+                                        <div class="backdrop1 rounded-3"
+                                            style="height: 100%; width: 100%; padding-top: 35%;">
+                                            <h6 style="color: #ff6900;">Commercial</h6>
+                                            <h4><b>Modern Office Complex</b></h4>
+                                            <p style="font-size: smaller; color: gainsboro;">A contemporary office space
+                                                designed for <br> maximum productivity and employee wellbeing.</p>
+                                            <a href="{% url 'projects' %}"
+                                                style=" text-decoration: none; color: white;">
+                                                <p class="transform2">View Projects <i
+                                                        class="fa-solid fa-arrow-right"></i></p>
+                                            </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class=" card1 h-100 w-100 bg-dark text-white ps-0  transform2" id="image2a">
+                                        <div class="backdrop1 rounded-3"
+                                            style="height: 100%; width: 100%; padding-top: 35%;">
+                                            <h6 style="color: #ff6900;">Residential</h6>
+                                            <h4><b>Luxury Residential Tower</b></h4>
+                                            <p style="font-size: smaller; color: gainsboro;">Premium living spaces with
+                                                state-of-the-art <br> amenities and stunning city views.</p>
+                                            <a href="{% url 'projects' %}"
+                                                style=" text-decoration: none; color: white;">
+                                                <p class="transform2">View Projects <i
+                                                        class="fa-solid fa-arrow-right"></i></p>
+                                            </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class=" card1 h-100 w-100 bg-dark text-white ps-0 transform2" id="image3a">
+                                        <div class="backdrop1 rounded-3"
+                                            style="height: 100%; width: 100%; padding-top: 35%; ">
+                                            <h6 style="color: #ff6900;">Public</h6>
+                                            <h4><b>Sustainable Community Center</b></h4>
+                                            <p style="font-size: smaller; color: gainsboro;">Eco-friendly architecture
+                                                designed to bring <br> communities together.</p>
+                                            <a href="{% url 'projects' %}"
+                                                style=" text-decoration: none; color: white;">
+                                                <p class="transform2">View Projects <i
+                                                        class="fa-solid fa-arrow-right"></i></p>
+                                            </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 h-100 w-100 bg-dark text-white ps-0 transform2" id="image4a">
+                                        <div class="backdrop1 rounded-3"
+                                            style="height: 100%; width: 100%; padding-top: 35%; ">
+                                            <h6 style="color: #ff6900;">Industrial</h6>
+                                            <h4><b>Industrial Manufacturing Hub</b></h4>
+                                            <p style="font-size: smaller; color: gainsboro;">Cutting-edge industrial
+                                                facilities designed for <br> optimal workflow and efficiency.</p>
+                                            <a href="{% url 'projects' %}"
+                                                style=" text-decoration: none; color: white;">
+                                                <p class="transform2">View Projects <i
+                                                        class="fa-solid fa-arrow-right"></i></p>
+                                            </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 h-100 w-100 bg-dark text-white ps-0 transform2" id="image5a">
+                                        <div class="backdrop1 rounded-3 pb-1" style=" padding-top: 35%;">
+                                            <h6 style="color: #ff6900;">Hospitality</h6>
+                                            <h4><b>Waterfront Hotel & Spa</b></h4>
+                                            <p style="font-size: smaller; color: gainsboro;">Luxury hospitality project
+                                                featuring elegant design <br> and premium guest experiences.</p>
+                                            <a href="{% url 'projects' %}"
+                                                style=" text-decoration: none; color: white;">
+                                                <p class="transform2">View Projects <i
+                                                        class="fa-solid fa-arrow-right"></i></p>
+                                            </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 h-100 w-100 bg-dark text-white ps-0 transform2" id="image6a">
+                                        <div class="backdrop1 rounded-3" style=" padding-top: 35%;">
+                                            <h6 style="color: #ff6900;">Mixed-Use</h6>
+                                            <h4><b>Urban Mixed-Use Development</b></h4>
+                                            <p style="font-size: smaller; color: gainsboro;">Integrated commercial and
+                                                residential spaces <br> designed for modern urban living.</p>
+                                            <a href="{% url 'projects' %}"
+                                                style=" text-decoration: none; color: white;">
+                                                <p class="transform2">View Projects <i
+                                                        class="fa-solid fa-arrow-right"></i></p>
+                                            </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-5 text-center my-5 mx-auto" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="col-11 my-5 mx-auto">
+                            <h1><b>Ready to Build Your Dream Project?</b></h1>
+                            <p style="color: gainsboro;" class="my-4">Let's discuss how our expertise can bring your
+                                vision to life. Contact our team today.</p>
+                            <a href="{% url 'contact' %}" style="text-decoration: none; color: white;"><button
+                                    class="btn btn1 my-4 rounded-3">Get In Touch <i
+                                        class="fa-solid fa-angle-right btn0"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- EXCELLENCE IN CONSTRUCTION end -->
+{% endblock %}
+<!-- services end -->

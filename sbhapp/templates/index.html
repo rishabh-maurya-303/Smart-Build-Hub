@@ -1,0 +1,682 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- title -->
+{% block title %}
+Home page
+{% endblock %}
+<!-- title -->
+
+<!-- content -->
+{% block main %}
+
+<div class="row m-0">
+    <div class="col-sm-12">
+        <!-- BUILDING TOMORROW TODAY start -->
+        <div class="row text-center " id="bg1">
+
+            <div class="col-sm-11 mx-auto mt-5" data-aos="fade-right">
+                <div class="row text-white">
+                    <div class="col-sm-12">
+                        <h6 style="color:  #ff6900;">🏠 BUILDING TOMORROW TODAY</h6>
+                        <div class="col-sm-12 mt-3">
+                            <h1 class="display-4"><b><b>Transforming <span style="color: #673AB7;">Visions</span> Into
+                                        <br> Exceptional<span style="color:  #673AB7;"> Structures</span></b></b></h1>
+                        </div>
+                        <div class="col-sm-12 mt-4">
+                            <p>With over 25 years of experience, we deliver innovative construction <br> solutions that
+                                exceed
+                                expectations and stand the test of time.</p>
+                        </div>
+                        <div class="col-sm-12 my-5">
+                            <a href="{% url 'signup' %}" style="text-decoration: none; color: white;"><button
+                                    class="btn btn1 rounded-3">Get Started<i
+                                        class="fa-solid fa-angle-right btn0"></i></button></a>
+                            <a href="{% url 'projects' %}" style="text-decoration: none; color: white;"><button
+                                    class="btn  btn2 rounded-3">Our Projects<i
+                                        class="fa-solid fa-angle-right btn0"></i></button></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 py-4 mb-5" style="background-color: #1e1e1e;">
+                        <div class="row mx-auto text-center">
+                            <div class="col-sm-4"><span style="color:  #ff6900;; font-size: xx-large;"><b><i
+                                            class="fa-solid fa-clock-rotate-left fa-sm"></i>30+</b></span><br>
+                                Years Experience</div>
+                            <div class="col-sm-4"><span style="color: #ff6900;; font-size: xx-large;"><b><i
+                                            class="fa-solid fa-check-double"></i> 250+</b></span><br>
+                                Projects Completed</div>
+                            <div class="col-sm-4"><span style="color: #ff6900; font-size: xx-large;"><b><i
+                                            class="fa-solid fa-face-smile fa-sm"></i>98%</b></span><br>
+                                Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- BUILDING TOMORROW TODAY end -->
+
+        <!-- ABOUT OUR COMPANY start -->
+        <div class="row">
+            <div class="col-sm-11">
+                <div class="row mx-auto text-white">
+                    <div class="col-sm-11 mx-auto py-4">
+                        <div class="row py-5" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="col-sm-12">
+                                <h6 style="color: #ff6900;">&#8213; ABOUT OUR COMPANY</h6>
+                                <h2 style="font-size: 35px;"><b>Building Dreams With Excellence & Reliability</b></h2>
+                                <p class="mt-4 mb-4">With decades of industry experience, our team of professional
+                                    builders and
+                                    architects are dedicated to bringing your vision to life. We handle projects of any
+                                    scale
+                                    with meticulous attention to detail and unwavering commitment to quality.</p>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="row g-4">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mx-auto">
+                                        <p><i class="fa-regular fa-circle-check fa-lg" style="color:#ff6900;"></i>
+                                            Professional
+                                            team of
+                                            experienced builders and designers</p>
+                                        <p><i class="fa-regular fa-circle-check fa-lg" style="color:#ff6900;"></i>
+                                            High-quality
+                                            materials sourced from trusted suppliers</p>
+                                        <p><i class="fa-regular fa-circle-check fa-lg" style="color:#ff6900;"></i>
+                                            On-time
+                                            project
+                                            completion and transparent communication</p>
+                                        <p class="text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"><a href="{% url 'about' %}"><button
+                                                class="btn rounded-3 text-white mt-3 transform1"
+                                                style="background-color:#673AB7;">Learn
+                                                More About Us <i class="fa-solid fa-angle-right"></i></button></a></p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                        <div class="row g-5">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in" data-aos-duration="5000">
+                                                <img src="{% static 'images/background12.jpg' %}"
+                                                    class="rounded-3 card1 h-100 w-100 img-fluid transform1" alt="">
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in-up" data-aos-duration="5000">
+                                                <img src="{% static 'images/construction-worker.jpg' %}"
+                                                    class="rounded-3 card1 h-100 w-100 img-fluid transform1" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT OUR COMPANY end -->
+
+        <div class="row">
+            <div class="col-sm-11 mx-auto">
+                <hr style="color: white">
+            </div>
+        </div>
+
+        <!-- PLATFORM FEATURES start -->
+        <div class="row" id="">
+            <div class="col-sm-11 text-white mx-auto">
+                <div class="row my-5" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 text-center">
+                        <h6 style="color: #ff6900;">&#8213;&nbsp; PLATFORM FEATURES &nbsp;&#8213;</h6>
+                    </div>
+                    <div class="col-sm-12 text-center mt-2">
+                        <h2><b>Powerful Tools for Modern Construction</b></h2>
+                    </div>
+                    <div class="col-sm-12 text-center my-3">
+                        <p style="color: rgb(151, 151, 151);">Our comprehensive suite of features empowers every
+                            stakeholder
+                            in
+                            the construction process with the tools they need to succeed.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row mx-auto g-4">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4  transform1">
+                                <div class=" card p-5 rounded-4 h-100 w-100 bg-dark text-white" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-bars-progress fa-2xl" style="color: #ff6900;"></i></p>
+                                    <h5><b>Project Dashboard</b></h5>
+                                    <p>Centralized hub for tracking progress, milestones,<br> and resource allocation
+                                        with
+                                        intuitive visualizations.</p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;;"></i> Real-time status
+                                        tracking
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;;"></i> Task management
+                                        system
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;;"></i> Budget monitoring</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class=" card p-5 rounded-4 h-100 w-100 bg-dark text-white" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-users fa-2xl mb-3" style="color: #ff6900;"></i></p>
+                                    <h5><b>Team Collaboration</b></h5>
+                                    <p>Connect all stakeholders in one platform with <br> powerful communication and
+                                        file-sharing <br> capabilities.</p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;"></i> Unified messaging
+                                        system
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;"></i> Document sharing &
+                                        approvals
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;"></i> Role-based permissions
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class=" card p-5 rounded-4 h-100 w-100 bg-dark text-white" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-microchip mb-3"
+                                            style="color: #ff6900; font-size:40px;"></i>
+                                    <h5><b>3D Visualization</b></h5>
+                                    <p>Experience your construction project in three <br> dimensions before breaking
+                                        ground.
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;"></i> Interactive models</p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;"></i> Virtual walkthroughs
+                                    </p>
+                                    <p><i class="fa-solid fa-check" style="color:  #673AB7;"></i> Design revisions in
+                                        real-time
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PLATFORM FEATURES end -->
+
+        <div class="row">
+            <div class="col-sm-11 mx-auto mb-3">
+                <hr style="color: white">
+            </div>
+        </div>
+
+        <!-- OUR SERVICES start -->
+        <div class="row dark">
+            <div class="col-sm-11 mx-auto">
+                <div class="row pt-4 text-white" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 text-center">
+                        <h6 style="color: #ff6900;">&#8213;&nbsp; OUR SERVICES &nbsp;&#8213;</h6>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <h2><b>Comprehensive Construction Solutions</b></h2>
+                    </div>
+                    <div class="col-sm-12 text-center my-3">
+                        <p style="color: rgb(151, 151, 151);">We offer a wide range of construction services tailored to
+                            meet
+                            the unique needs of each project, delivered <br> with exceptional craftsmanship and
+                            attention to
+                            detail.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row" style="row-gap: 30px;">
+                            <div class="col-12 col-sm-13 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class="card bg-dark p-4 text-white h-100 w-100 center-any" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-house-chimney-window fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Residential Construction
+                                    </h4>
+                                    <p>From custom homes to multi-family units, we build comfortable, energy-efficient
+                                        residential spaces designed for modern living.</p>
+                                    <a href="{% url 'services' %}" style="color: #ff6900; text-decoration: none;">Learn
+                                        More
+                                        <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class="card p-4 bg-dark text-white h-100 w-100 center-any" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-building fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Commercial Buildings
+                                    </h4>
+                                    <p>Office spaces, retail centers, and industrial facilities <br> built to the
+                                        highest
+                                        standards of quality and functionality.</p>
+                                    <a href="{% url 'services' %}" style="color: #ff6900; text-decoration: none;">Learn
+                                        More
+                                        <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class="card p-4 100 bg-dark text-white h-100 w-100 center-any" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-palette fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Interior Design
+
+                                    </h4>
+                                    <p>Transform your space with our expert interior design services, creating
+                                        environments that inspire <br> and delight.</p>
+                                    <a href="{% url 'services' %}" style="color: #ff6900; text-decoration: none;">Learn
+                                        More
+                                        <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class="card p-4 100 bg-dark text-white h-100 w-100 center-any" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-hammer fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Renovation & Remodeling
+                                    </h4>
+                                    <p>Breathe new life into existing structures with our comprehensive renovation
+                                        and
+                                        remodeling services.</p>
+                                    <a href="{% url 'services' %}" style="color: #ff6900; text-decoration: none;">Learn
+                                        More
+                                        <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class="card p-4 100 bg-dark text-white h-100 w-100 center-any" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-ruler fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Architectural Design
+                                    </h4>
+                                    <p>Innovative architectural solutions that balance aesthetics, functionality, and
+                                        sustainability.</p>
+                                    <a href="{% url 'services' %}" style="color: #ff6900; text-decoration: none;">Learn
+                                        More
+                                        <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 transform1">
+                                <div class="card px-4 py-2 pt-4 h-100 bg-dark text-white h-100 w-100 center-any" data-aos="zoom-in"
+                                    data-aos-duration="5000">
+                                    <p><i class="fa-solid fa-book-open-reader fa-2xl"></i></p>
+                                    <h4 style="background-color: #673AB7;">
+                                        Construction Management
+                                    </h4>
+                                    <p>Expert oversight of your project from concept to completion, ensuring efficiency
+                                        and
+                                        quality at every stage.</p>
+                                    <a href="{% url 'services' %}" style="color: #ff6900; text-decoration: none;">Learn
+                                        More
+                                        <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OUR SERVICES end -->
+
+        <div class="row">
+            <div class="col-sm-11 mx-auto mt-5">
+                <hr style="color: white">
+            </div>
+
+        </div>
+        <!-- OUR PROJECTS -->
+        <div class="row">
+            <div class="col-sm-11 mx-auto">
+                <div class="row text-white my-4 py-4" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 mx-auto text-center">
+                        <h6 style="color: #ff6900;">&#8213;&nbsp; OUR PROJECTS &nbsp;&#8213;</h6>
+                        <h1><b>Featured Construction Projects</b></h1>
+                    </div>
+                    <div class="row mx-auto my-3">
+                        <div class="col-12 col-sm-12 col-md-8" id="">
+                            <p style="color: gainsboro;">Take a look at some of our most impressive projects, showcasing
+                                our
+                                commitment to quality, innovation, and excellence in construction.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4" id="all_project">
+                            <a href="{% url 'projects' %}" style="text-decoration: none; color: white;"><button
+                                    class="btn btn1 rounded-3">View All Projects<i
+                                        class="fa-solid fa-angle-right btn0"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-sm-12 mx-auto">
+                            <div class="row g-4">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 bg-dark text-white ps-4 h-100 w-100 transform2 mb-2"
+                                        style="padding-top: 40%; " id="image1">
+                                        <h6 style="color: #ff6900;">Commercial</h6>
+                                        <h4><b>Modern Office Complex</b></h4>
+                                        <a href="{% url 'projects' %}" style="text-decoration: none; color: white;">
+                                            <p class="transform2">View Projects <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 bg-dark text-white h-100 w-100 ps-4 transform2 mb-2"
+                                        style="padding-top: 40%; " id="image2">
+                                        <h6 style="color: #ff6900;">Residential</h6>
+                                        <h4><b>Luxury Residential Tower</b></h4>
+                                        <a href="{% url 'projects' %}" style="text-decoration: none; color: white;">
+                                            <p class="transform2">View Projects <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 bg-dark text-white h-100 w-100 ps-4 transform2 mb-2"
+                                        style="padding-top: 40%; " id="image3">
+                                        <h6 style="color: #ff6900;">Public</h6>
+                                        <h4><b>Sustainable Community Center</b></h4>
+                                        <a href="{% url 'projects' %}" style="text-decoration: none; color: white;">
+                                            <p class="transform2">View Projects <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 bg-dark text-white h-100 w-100 ps-4 pe-2 transform2 mb-2"
+                                        style="padding-top: 40%; " id="image4">
+                                        <h6 style="color: #ff6900;">Industrial</h6>
+                                        <h4><b>Industrial Manufacturing Hub</b></h4>
+                                        <a href="{% url 'projects' %}" style="text-decoration: none; color: white;">
+                                            <p class="transform2">View Projects <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 bg-dark text-white ps-4 h-100 w-100 transform2 mb-2"
+                                        style="padding-top: 40%; " id="image5">
+                                        <h6 style="color: #ff6900;">Hospitality</h6>
+                                        <h4><b>Waterfront Hotel & Spa</b></h4>
+                                        <a href="{% url 'projects' %}" style="text-decoration: none; color: white;">
+                                            <p class="transform2">View Projects <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                    <div class="card1 bg-dark text-white ps-4 h-100 w-100 transform2 mb-2"
+                                        style="padding-top: 40%; " id="image6">
+                                        <h6 style="color: #ff6900;">Mixed-Use</h6>
+                                        <h4><b>Urban Mixed-Use Development</b></h4>
+                                        <a href="{% url 'projects' %}" style="text-decoration: none; color: white;">
+                                            <p class="transform2">View Projects <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OUR PROJECTS end -->
+
+        <div class="row">
+            <div class="col-sm-11 mx-auto mb-5">
+                <hr style="color: white">
+            </div>
+        </div>
+
+        <!-- OUR PROCESS start -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row mx-auto" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 text-white text-center">
+                        <h6 style="color: #ff6900;">&#8213;&nbsp; OUR PROCESSES &nbsp;&#8213;</h6>
+                        <h1><b>How SmartBuild Hub Works</b></h1>
+                        <p>Our innovative platform transforms the construction journey from concept to completion
+                            through an
+                            intuitive digital workflow that connects all stakeholders.
+                        </p>
+                    </div>
+                    <div class="col-sm-11 mb-5 mt-4 mx-auto">
+                        <div class="row g-4">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform1 center-any">
+                                    <p><i class="fa-solid fa-pen-ruler fa-2xl" style="color: #ff6900;"></i></p>
+                                    <h4 style="color: white;"><b>Project Planning</b></h4>
+                                    <p style="color: gainsboro;">Create your vision with our intuitive tools. Define
+                                        requirements, set budgets, and establish timelines in a collaborative
+                                        environment.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform1 center-any">
+                                    <p><i class="fa-solid fa-users-gear fa-2xl" style="color: #ff6900;"></i></p>
+                                    <h4 style="color: white;"><b>Team Assembly</b></h4>
+                                    <p style="color: gainsboro;">Connect with architects, contractors, and suppliers
+                                        through our
+                                        verified network to build your ideal construction team.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform1 center-any">
+                                    <p><i class="fa-solid fa-gears fa-2xl" style="color: #ff6900;"></i></p>
+                                    <h4 style="color: white;"><b>Project Execution</b></h4>
+                                    <p style="color: gainsboro;">Monitor progress in real-time, approve changes
+                                        instantly, <br>
+                                        and maintain clear communication throughout construction.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform1 center-any">
+                                   <p> <i class="fa-solid fa-flag-checkered fa-2xl" style="color: #ff6900;"></i></p>
+                                    <h4 style="color: white;"><b>Project Completion</b></h4>
+                                    <p style="color: gainsboro;">Receive comprehensive documentation, warranty
+                                        information, and
+                                        maintenance schedules for your new construction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OUR PROCESS end -->
+
+        <div class="row">
+            <div class="col-sm-11 mx-auto mb-5">
+                <hr style="color: white">
+            </div>
+
+        </div>
+        <!-- TESTIMONIALS start -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row mx-auto" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-sm-12 text-white text-center">
+                        <h6 style="color: #ff6900;">&#8213;&nbsp; TESTIMONIALS &nbsp;&#8213;</h6>
+                        <h1><b>What Our Clients Say</b></h1>
+                        <p>Read testimonials from our satisfied clients who have experienced our dedication to quality,
+                            reliability, and excellence in construction.</p>
+                    </div>
+                    <div class="col-sm-11 mb-5 mt-4 mx-auto">
+                        <div class="row g-4">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform3">
+                                    <div
+                                        style="display: flex; justify-content: start; align-items: start; column-gap: 5px;">
+                                        <i class="fa-solid fa-star mb-2 mt-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mb-2 mt-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mb-2 mt-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mb-2 mt-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mb-2 mt-2" style="color: #ff6900;"></i>
+                                    </div>
+                                    <p style="color: gainsboro;">"Working with this construction team was a fantastic
+                                        experience. Their attention to detail and commitment to quality exceeded our
+                                        expectations. They completed our project on time and within budget."</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-white">
+                                            <div class="row comment_pic">
+                                                <div class="col-sm-2 my-2 center-any"><img
+                                                        src="{% static 'images/commentpic.jpg' %}"
+                                                         class="img-fluid comments_pic"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-sm-10 comment_name">
+                                                    <p><b>Sarah Johnson</b>
+                                                        <br>
+                                                        <small>Property Developer</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform3">
+                                    <div
+                                        style="display: flex; justify-content: start; align-items: start; column-gap: 5px;">
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                    </div>
+                                    <p style="color: gainsboro;">"Working with this construction team was a fantastic
+                                        experience. Their attention to detail and commitment to quality exceeded our
+                                        expectations. They completed our project on time and within budget."</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-white">
+                                            <div class="row comment_pic">
+                                                <div class="col-sm-2 my-2 center-any"><img
+                                                        src="{% static 'images/commentpic.jpg' %}"
+                                                         class="img-fluid comments_pic"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-sm-10 comment_name">
+                                                    <p><b>Michael Thompson</b>
+                                                        <br>
+                                                        <small>Business Owner</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card bg-dark p-5 h-100 w-100 transform3">
+                                    <div
+                                        style="display: flex; justify-content: start; align-items: start; column-gap: 5px;">
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                        <i class="fa-solid fa-star mt-2 mb-2" style="color: #ff6900;"></i>
+                                    </div>
+                                    <p style="color: gainsboro;">"Working with this construction team was a fantastic
+                                        experience. Their attention to detail and commitment to quality exceeded our
+                                        expectations. They completed our project on time and within budget."</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-white">
+                                            <div class="row comment_pic">
+                                                <div class="col-sm-2 my-2 center-any"><img
+                                                        src="{% static 'images/commentpic.jpg' %}"
+                                                         class="img-fluid comments_pic"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-sm-10 comment_name">
+                                                    <p><b>Emily Rodriguez</b>
+                                                        <br>
+                                                        <small>Homeowner</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TESTIMONIALS end -->
+
+
+        <div class="row">
+            <div class="col-sm-11 mx-auto mb-5">
+                <hr style="color: white">
+            </div>
+        </div>
+
+        <!-- Ready to Build Your Dream Project? start -->
+
+        <div class="row">
+            <div class="col-sm-12 my-5">
+                <div class="row text-white mx-auto mb-5" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 mx-auto py-4 center-any">
+                        <h1><b>Ready to Build Your Dream Project?</b></h1>
+                        <p style="color: gainsboro;">Let's discuss how we can bring your vision to life with our
+                            expertise in
+                            construction and design.</p>
+                        <div class="col-sm-12 my-5">
+                            <a href="{% url 'signup' %}" style="text-decoration: none; color: white;"><button
+                                    class="btn  btn1 rounded-3 my-2">Get Free Estimate <i
+                                        class="fa-solid fa-angle-right btn0"></i></button></a>
+                            <a href="{% url 'contact' %}" style="text-decoration: none; color: white;"><button
+                                    class="btn  btn2 rounded-3 my-2">Contact Us <i
+                                        class="fa-solid fa-angle-right btn0"></i></button></a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                        <div class="row g-4 mx-auto">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card py-2 text-center h-100 w-100 text-white transform4"
+                                    style="background-color: #ff6900;">
+                                    <div><i class="fa-solid fa-house fa-2xl py-4 pe-5"></i></div>
+                                    <h4><b>500+</b></h4>
+                                    <p>Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card py-2 text-center h-100 w-100 text-white transform4"
+                                    style="background-color: #ff6900;">
+                                    <div><i class="fa-solid fa-face-smile fa-2xl py-4 pe-5"></i></div>
+                                    <h4><b>120+</b></h4>
+                                    <p>Expert Team Members</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card py-2 text-center h-100 w-100 text-white transform4"
+                                    style="background-color: #ff6900;">
+                                    <div><i class="fa-solid fa-calendar-check fa-2xl py-4 pe-4"></i></div>
+                                    <h4><b>25+</b></h4>
+                                    <p>Years of Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in" data-aos-duration="5000">
+                                <div class="card py-2 text-center h-100 w-100 text-white transform4"
+                                    style="background-color: #ff6900;">
+                                    <div> <i class="fa-regular fa-clock fa-2xl py-4 pe-5"></i></div>
+                                    <h4><b>98%</b></h4>
+                                    <p>On-Time Completion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ready to Build Your Dream Project? end -->
+{% endblock%}
+<!-- contant -->

@@ -1,0 +1,33 @@
+{% extends 'homeownerbase.html' %}
+{% block homeownerbase %}
+<h3 class="text-light text-center mt-0">View Updates</h3>
+<div class="row">
+    <div class="col-sm-6 mx-auto">
+        <div class="card rounded-0 mt-4 p-5">
+            <h3 class="text-center text-light">Project Name: {{project.projectname}}</h2>
+                <h5 class=" text-light mt-4">Project Status: <span style="color: #ff6900;">{{project.status}}</span>
+                    <hr>
+                    </h4>
+                    {% if updates %}
+
+                    {% for u in updates %}
+                    <p class="text-light fw-bold">Update - {{u.progress_percent}} %</p>
+                    <p class="text-light">{{u.update_text}}</p>
+                    {% if u.image %}
+                    <img src="{{u.image.url}}" alt="Image" class="img-fluid" height="300px">
+                    {% else %}
+                    <p class="text-light">No Image</p>
+                    {% endif %}
+                    <p class="mt-4">
+                        <span class="text-light">Updated By: {{u.updated_by.name}}</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="text-light">At: {{u.timestamp}}</span>
+                    </p>
+                    {% endfor %}
+                    {% else %}
+                    <p>No Updates Available</p>
+                    {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

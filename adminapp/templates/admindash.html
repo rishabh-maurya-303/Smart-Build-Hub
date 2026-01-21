@@ -1,0 +1,85 @@
+{% extends 'adminbase.html' %}
+{% load static %}
+
+{% block admin %}
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="id1 m-3"><b>Welcome <span style="color: #ff6900;">Admin</span></b></h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="{% url 'managehomeowners' %}">
+                    <div class="card text-white">
+                        <h6 class="id1"><span style="font-size: 19px;">🏠</span>&nbsp; REGISTERED HOME OWNERS</h6>
+                        <hr class="id1">
+                        <p style="font-size: 48px;">{{th}}</p>
+                        <p>All time Registered Home Owners</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="{% url 'managecontractors' %}">
+                    <div class="card text-white">
+                        <h6 class="id1"><span style="font-size: 19px;">👷‍♂️</span>&nbsp; REGISTERED CONTRACTORS</h6>
+                        <hr class="id1">
+                        <p style="font-size: 48px;">{{tc}}</p>
+                        <p>All time Registered Contractors</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="">
+                    <div class="card text-white">
+                        <h6 class="id1"><span style="font-size: 19px;">🏗️</span> &nbsp;TOTAL PROJECTS</h6>
+                        <hr class="id1">
+                        <p style="font-size: 48px;">{{tp}}</p>
+                        <p>Projects Added to the Platform</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="{% url 'viewenq' %}">
+                    <div class="card text-white">
+                        <h6 class="id1"><span style="font-size: 19px;">🏗️</span> &nbsp;TOTAL Enquries</h6>
+                        <hr class="id1">
+                        <p style="font-size: 48px;">{{enqs}}</p>
+                        <p>Total Enquries</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="">
+                    <div class="card text-white">
+                        <h6 class="id1"><span style="font-size: 19px;">✅</span> &nbsp;COMPLETED PROJECTS</b></h6>
+                        <hr class="id1">
+                        <p style="font-size: 48px;">{{tcp}}</p>
+                        <p>Successfully Finished Projects</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="">
+                    <div class="card  text-white">
+                        <h6 class="id1"><i class="fa-solid fa-hourglass-half fa-xl text-warning"></i> ONGOING PROJECTS
+                        </h6>
+                        <hr class="id1">
+                        <p style="font-size: 48px;">{{trp}}</p>
+                        <p>Currently Under Construction</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="col-sm-3">
+               <a href="">
+                 <div class="card text-white">
+                    <h6 class="id1"><i class="fa-solid fa-clock fa-xl text-danger"></i> DELAYED PROJECTS</h6>
+                    <hr class="id1">
+                    <p style="font-size: 48px;">0</p>
+                    <p>Projects Behind Scheduled</p>
+                </div>
+               </a>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}

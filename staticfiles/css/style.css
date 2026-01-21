@@ -1,0 +1,477 @@
+ /* body {
+    font-family: 'Poppins', sans-serif;
+} */
+
+body{
+    
+    overflow-x: hidden;
+}
+
+[data-aos] {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+ #bg1 {
+     background-image: url('../images/background5.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ #bg2 {
+     background-image: url('../images/white-vintage-brick-wall.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ }
+
+ #bg3 {
+     background-image: url('../images/white-vintage-brick-wall.jpg');
+     background-size: contain;
+     background-repeat: repeat;
+     background-attachment: fixed;
+ }
+
+ #bg4 {
+     background-color: rgba(0, 0, 0, 0.5);
+
+ }
+
+ #bg5 {
+     background-image: url('../images/white-vintage-brick-wall.jpg');
+     background-size: contain;
+     background-repeat: repeat;
+     background-attachment: fixed;
+ }
+
+ #bg5a {
+     background-color: rgba(0, 0, 0, 0.3);
+     backdrop-filter: blur(10px);
+ }
+
+ #bg6 {
+     background-image: url('../images/contactbg.webp');
+     background-size: contain;
+     background-repeat: repeat;
+ }
+
+ #bg7 {
+     background-image: url('../images/background14.jpg');
+     background-size: contain;
+     background-repeat: repeat;
+ }
+
+/* #bg8{
+    background-image: url('../images/Sustainable-Community-Center.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 10px solid white;
+   
+} */
+
+#bg9{
+    background-image: url('../images/illustration-construction-site.jpg');
+     background-size: cover; 
+     background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+
+#bg10{
+    background-image: url('../images/silhouette-business-people-discussion-meeting-cityscape-team-concept.jpg');
+     background-size: cover; 
+     background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+
+#bg11{
+    background-image: url('../images/happy-workers-construction-site-young-civil-engineer-manager-architects-handshaking-construction-site-looking-construction-phase-cooperation-teamwork-concept.jpg');
+     background-size: cover; 
+     background-attachment: fixed;
+}
+
+#bg12{
+    background-image: url('../images/white-vintage-brick-wall.jpg');
+     background-size: contain; 
+     background-attachment: fixed;
+}
+
+#photo{
+    background-image: url('../images/dev.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.backdrop2{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.8));
+      background-size: cover; /* Adjust as needed */
+      background-position: center; /* Adjust as needed */
+}
+
+ .map-container {
+     background-color: #000;
+     /* Solid black background */
+     /* Or a dark gradient for a more subtle effect */
+     /* background: linear-gradient(to bottom, #1a1a1a, #000); */
+ }
+
+ .dark-map {
+     filter: invert(100%) grayscale(100%) brightness(100%);
+     /* Invert colors, grayscale, and darken */
+     /* Adjust brightness value for desired darkness */
+ }
+
+ .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ }
+
+ .navbar-toggler {
+     border: 2px solid white;
+     background-color: white;
+ }
+
+ .nav1 {
+     color: white;
+     transition: .5s ease-in-out;
+     margin: 20px;
+ }
+
+ .nav1:hover {
+     color: #ff6900;
+     /* text-decoration-line: underline; */
+     text-decoration-color: #ff6900;
+     transform: scale(1.2, 1.2);
+ }
+
+ #nav1 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 30px;
+ }
+
+ .transform {
+     transition: ease-in-out .5s;
+ }
+
+ .transform:hover {
+     transform: scale(1.2, 1.2);
+ }
+
+ .transform1 {
+     transition: ease-in-out .5s;
+     border: 0;
+ }
+
+ .transform1:hover {
+     transform: scale(1.08, 1.08);
+ }
+
+.w{
+    color: white ;
+    text-decoration: none ;
+}
+.w:hover{
+    color: #ff6900 ;
+    text-decoration: none ;
+}
+ .li1 {
+     transition: ease-in-out .5s;
+     list-style: none;
+ }
+
+ .li1::before {
+     content: "\2192";
+     visibility: hidden;
+     padding-right: 5px;
+     color: #ff6900;
+ }
+
+ .li1:hover::before {
+     content: "\2192";
+     visibility: visible;
+     padding-right: 5px;
+     color: #ff6900 !important;
+ }
+
+ .li1:hover {
+     transform: scale(1.08);
+     color: #ff6900;
+ }
+
+ .li2 {
+     transition: ease-in-out .5s;
+     list-style: none;
+ }
+
+ .li2::before {
+     content: "\2192";
+     visibility: hidden;
+     padding-right: 5px;
+     color: #673AB7;
+ }
+
+ .li2:hover::before {
+     content: "\2192";
+     visibility: visible;
+     padding-right: 5px;
+     color: #673AB7;
+ }
+
+ .li2:hover {
+     transform: scale(1.08);
+     color: #673AB7;
+ }
+
+.place1{
+    border:2px solid #ff6900;
+}
+
+ .place:focus {
+  border-color: #ff6900;
+  outline: 2px solid #ff6900 !important;
+ }
+ .place:hover {
+  border-color: #ff6900;
+  outline: 2px solid #ff6900 !important;
+ }
+
+ .btn1 {
+     height: 50px;
+     margin-right: 15px;
+     color: white;
+     background-color: #ff6900;
+     transition: ease-in-out .3s;
+ }
+
+ .btn2 {
+     height: 50px;
+     margin-right: 15px;
+     color: white;
+     background-color: #673AB7;
+     ;
+     transition: ease-in-out .3s;
+ }
+
+ .btn1:hover {
+     transform: scale(1.06);
+     background-color: #673AB7;
+ }
+
+ .btn2:hover {
+     background-color: #ff6900;
+     transform: scale(1.1, 1.1);
+ }
+
+ /* .btn0:hover{
+    
+ } */
+
+
+ #image1 {
+     background-image: url('../images/Modern-Office-Complex.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+ }
+
+ #image2 {
+     background-image: url('../images/Luxury-Residential-Tower.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+ }
+
+ #image3 {
+     background-image: url('../images/Sustainable-Community-Center.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+ }
+
+ #image4 {
+     background-image: url('../images/Industrial-Manufacturing-Hub.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+ }
+
+ #image5 {
+     background-image: url('../images/Waterfront-Hotel-Spa.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+ }
+
+ #image6 {
+     background-image: url('../images/Urban-Mixed-Use-Development.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+ }
+
+ .backdrop1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image.jpg');
+      background-size: cover; /* Adjust as needed */
+      background-position: center; /* Adjust as needed */
+}
+ 
+ #image1a {
+     background-image: url('../images/Modern-Office-Complex.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;
+  
+ }
+
+ #image2a {
+     background-image: url('../images/Luxury-Residential-Tower.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 10px;  
+ }
+
+ #image3a {
+     background-image: url('../images/Sustainable-Community-Center.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 275px;
+     width: 98%; */
+     border-radius: 10px;
+ }
+
+ #image4a {
+     background-image: url('../images/Industrial-Manufacturing-Hub.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 275px;
+     width: 98%; */
+     border-radius: 10px;
+ }
+
+ #image5a {
+     background-image: url('../images/Waterfront-Hotel-Spa.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 275px;
+     width: 98%; */
+     border-radius: 10px;
+ }
+
+ #image6a {
+     background-image: url('../images/Urban-Mixed-Use-Development.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 275px;
+     width: 98%; */
+     border-radius: 10px;
+ }
+
+ .transform2 {
+     transition: ease-in-out .5s;
+     border: 0;
+ }
+
+ .transform2:hover {
+     transform: scale(1.08, 1.08);
+     color: #ff6900;
+ }
+
+ .transform3 {
+     transition: ease-in-out .5s;
+ }
+
+ .transform3:hover {
+     transform: scale(1.08, 1.08);
+     border: 1px solid #ff6900 !important;
+ }
+
+ .transform4 {
+     transition: ease-in-out .5s;
+ }
+
+ .transform4:hover {
+     transform: scale(1.1, 1.1);
+     border: 1px solid #673AB7 !important;
+ }
+
+ .card {
+    /* box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05),
+         0 2px 4px rgba(0, 0, 0, 0.8);  */
+    background-color: #1e1e1e !important; 
+    /* background-color: #1e1e1e00 !important; */
+   border: 1px solid transparent;
+   background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+              linear-gradient(to right, orange, purple) border-box;
+   box-shadow: 0 0 6px rgba(255, 165, 0, 0.3);
+
+ }
+
+ .itransform5 {
+     transition: ease-in-out .5s;
+ }
+
+ .itransform5:hover {
+     transform: scale(2, 2);
+ }
+
+ .border1 {
+     border-block-start-color: #ff6900;
+     border-block-end-color: #673AB7;
+     border-left: 1px solid #ff6900;
+     border-right: 1px solid #673AB7;
+ }
+
+ .tilt {
+     transition: ease-in-out .5s;
+ }
+
+ .tilt:hover {
+     transform: rotate(5deg);
+ }
+
+
+
+
+
+  .slider {
+      width: 90%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #000;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 10); /* image width * number of images (including repeat) */
+      animation: scroll 30s linear infinite;
+    }
+
+    .slide {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+     .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .c{
+        float: right;
+        background-color: rgba(255, 255, 255, 0);
+        border-image: linear-gradient(to right, #ff6900 0%,#673AB7 100%)1;
+        border-width: 4px;
+        border-style: solid ;
+        padding: 5px;
+    }

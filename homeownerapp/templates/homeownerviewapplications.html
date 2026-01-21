@@ -1,0 +1,59 @@
+{% extends 'homeownerbase.html' %}
+
+{% block homeownerbase %}
+<h3 class="text-light">Application For {{project.projectname}}</h3>
+<div class="table-responsive">
+<table class="table">
+    <tr>
+        <th class="ht hr">S.No</th>
+        <th class="ht hr">Contractor Name</th>
+        <th class="ht hr">Design</th>
+        <th class="ht hr">Estimated Budget</th>
+        <th class="ht hr">Estimated Duration</th>
+        <th class="ht hr">Status</th>
+        <th class="ht hr">Submitted At</th>
+        <th class="ht hr">Action</th>
+    </tr>
+    {% for a in applications %}
+    <tr>
+        <td class="ht hr">{{forloop.counter}}</td>
+        <td class="ht hr">{{a.contractor.name}}</td>
+        <td class="ht hr">
+            {% if a.design_file %}
+            <a href="{{a.design_file.url}}" class="btn" style="background-color: #ff6900; color: white;">view</a>
+            <!--  for img in new page -> target="_blank" | for img to -> download="{{a.design_file.url}}" -->
+            {% else %}
+            No Design File
+            {% endif %}
+        </td>
+        <td class="ht hr">{{a.estimated_budget}}</td>
+        <td class="ht hr">{{a.estimated_duration}}</td>
+        <td class="ht hr">
+            {% if a.status == 'pending' %}
+            <span class="btn btn-warning">Pending</span>
+            {% elif a.status == 'approved' %}
+            <span class="btn btn-success">Approved</span>
+            {% elif a.status == 'rejected' %}
+            <span class="btn btn-danger">Rejected</span>
+            {% else %}
+            {{a.status}}
+            {% endif %}
+        </td>
+        <td class="ht hr">{{a.submitted_at}}</td>
+        <td class="ht hr">
+            {% if project.contractor %}
+                Assigned to {{project.contractor.name}}
+            {% elif a.status == 'rejected' %}
+                <span class="btn btn-danger">Rejected</span>
+            {% elif a.status == 'approved' %}
+                <span class="btn btn-success">Approved</span>
+            {% else %}
+            <a href="{% url 'approveapp' id=a.id %}" class="btn btn-success">Approved</a>
+            <a href="{% url 'rejectapp' id=a.id %}" class="btn btn-danger">Rejected</a>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folders
+venv/
+env/
+ENV/
+
+# Git files
+.git/
+.gitignore
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Defang local files
+.defang/
+
+# Frontend / Node.js build artifacts
+node_modules/
+build/
+dist/
+
+# Media, large files, SQLite, logs
+media/
+*.log
+*.env

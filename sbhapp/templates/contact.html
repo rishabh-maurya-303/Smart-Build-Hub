@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- title -->
+{% block title %}
+Contact page
+{% endblock %}
+<!-- title -->
+
+<!-- contact start-->
+{% block main %}
+
+<div class="row  py-5 px-5" id="bg6">
+    <div class="col-sm-6 text-white px-4 pt-3 our_journey" data-aos="fade-up" data-aos-duration="3000">
+        <h6 style="color:  #ff6900;">&#8213; GET IN TOUCH</h6>
+        <h4 class="display-4"><b><b>Ready to Start Your Project?</b></b></h4>
+        <p style="color: gainsboro;">Contact us today to discuss your construction needs. Our team is ready to help
+            bring your vision to life with our expert services and dedication to excellence.</p>
+        <div class="row">
+            <div class="col-sm-3 text-end py-3 contact_icons">
+                <i class="fa-solid fa-map-location-dot fa-flip fa-2xl itransform5"></i>
+            </div>
+            <div class="col-sm-8">
+                <p><b>Our Location</b> <br> <span style="color: gainsboro;">123 Construction Ave, Building City,
+                        10001</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 text-end py-3 contact_icons">
+                <i class="fa-solid fa-phone-volume fa-shake fa-2xl itransform5"></i>
+            </div>
+            <div class="col-sm-8">
+                <p><b>Call Us</b> <br> <span style="color: gainsboro;">(555) 123-4567</span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 text-end py-3 contact_icons">
+                <i class="fa-solid fa-envelope fa-fade fa-2xl itransform5"></i>
+            </div>
+            <div class="col-sm-8">
+                <p><b>Email Us</b> <br> <span style="color: gainsboro;">info@constructioncompany.com</span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-11 col-xl-10 my-5">
+
+                 <div class="row">
+                    <div class="col-3 col-xl-3 text-end">
+                        <a href="" class="text-white"><i
+                                class="fa-brands fa-square-facebook fa-flip fa-2xl itransform5"></i></a>
+                    </div>
+                    <div class="col-3 col-xl-2 text-center">
+                        <a href="" class="text-white"><i
+                                class="fa-brands fa-square-twitter fa-fade fa-2xl itransform5"></i></a>
+                    </div>
+                    <div class="col-3 col-xl-2 text-start">
+                        <a href="" class="text-white"><i
+                                class="fa-brands fa-square-instagram fa-flip fa-2xl itransform5"></i></a>
+                    </div>
+                    <div class="col-3 col-xl-2 text-start">
+                        <a href="" class="text-white"> <i
+                                class="fa-brands fa-square-linkedin fa-bounce fa-2xl itransform5"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        {% if messages %}
+        {% for m in messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{m}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        {% endfor %}
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label for="n">Name</label>
+            <input type="text" style="height: 50px" class="form-control place" placeholder="Name" aria-label="Name"
+                name="name" id="n" required>
+
+            <label for="cn">Contact</label>
+            <input type="text" style="height: 50px" class="form-control place" placeholder="Contact Number"
+                aria-label="Contact Number" name="contactno" id="cn" required>
+
+            <label for="e">Email</label>
+            <input type="text" style="height: 50px" class="form-control place" placeholder="Email" aria-label="Email"
+                name="email" id="e" required>
+
+            <label for="s">Subject</label>
+            <input type="text" style="height: 50px" class="form-control place" placeholder="Subject"
+                aria-label="Subject" name="subject" id="s" required>
+
+            <textarea class="form-control my-4 place" placeholder="Message" id="floatingTextarea2" style="height: 150px"
+                name="message" required></textarea>
+            <label for="floatingTextarea">Message</label>
+            <button class="btn btn1 rounded-3 mx-auto" style="width: 100%;" type="submit"><b>Submit Enquiry</b> <i
+                    class="fa-solid fa-angle-right btn0"></i></button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
+<!-- contact end -->
