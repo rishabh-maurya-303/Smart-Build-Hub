@@ -1,0 +1,13 @@
+# Environment & secrets
+.env
+secret.txt
+
+# Database
+db.sqlite3
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data
+data.json
