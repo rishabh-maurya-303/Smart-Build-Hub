@@ -13,11 +13,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 
-# changes 
-from dotenv import load_dotenv
-load_dotenv()
-#
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # changes
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("wgxct1bzvrm4u8p#vqff5&pe2)q7yo!eok!@(a06a5_m#0^c=h")
+SECRET_KEY = "SECRET_KEY"
 #
 
 
@@ -36,15 +31,7 @@ SECRET_KEY = os.getenv("wgxct1bzvrm4u8p#vqff5&pe2)q7yo!eok!@(a06a5_m#0^c=h")
 DEBUG = True
 
 #Defang start
-ALLOWED_HOSTS = ['*',
-                 
-                 '.defang.dev',
-                 
-   os.getenv('DJANGO_ALLOWED_HOST', '10.0.27.40', 'wgxct1bzvrm4u8p#vqff5&pe2)q7yo!eok!@(a06a5_m#0^c=h' ),  # default for your current IP
-    'localhost',
-    '127.0.0.1',
-    'your-domain.com',
-    '.trycloudflare.com',
+ALLOWED_HOSTS = ['*'
 ]
 
 #defang end
