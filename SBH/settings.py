@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['*',
     'localhost',
     '127.0.0.1',
     'your-domain.com',
+    '.trycloudflare.com',
 ]
 
 #defang end
@@ -141,7 +142,8 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.defang.dev'
+    'https://*.defang.dev',
+  "https://*.trycloudflare.com",
 ]
 
 MEDIA_URL = 'media/'
