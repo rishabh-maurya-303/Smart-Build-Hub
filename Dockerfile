@@ -21,4 +21,4 @@ CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collect
 
 
 # Copy the existing SQLite database into the container
-COPY db.sqlite3 /app/db.sqlite3
+# COPY db.sqlite3 /app/db.sqlite3
