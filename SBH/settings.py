@@ -30,15 +30,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 #Defang start
-ALLOWED_HOSTS = ['*',
-                 
-                 '.defang.dev',
-                 
-   os.getenv('DJANGO_ALLOWED_HOST', '10.0.27.40'),  # default for your current IP
-    'localhost',
-    '127.0.0.1',
-    '.trycloudflare.com',
-]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 #defang end
 
@@ -149,10 +141,12 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-CSRF_TRUSTED_ORIGINS = [
-    'https://*.defang.dev',
-  "https://*.trycloudflare.com",
-]
+
+# CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = os.getenv(
+    "CSRF_TRUSTED_ORIGINS",
+    "http://127.0.0.1:8000,http://localhost:8000"
+).split(",")
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
