@@ -29,10 +29,15 @@
                         {% endif %}
                     </td>
                     <td class="ht">{{h.address}}</td>
-                    <td class="ht"><a href="" class="btn btn-danger"><b>Block</b></a></td>
+                    <td class="ht">
+                        {% if h.login.status == 'active' %}
+                        <a href="{% url 'toggle_status' h.id %}" class="btn btn-danger"><b>Block</b></a>
+                        {% else %}
+                        <a href="{% url 'toggle_status' h.id %}" class="btn btn-success"><b>Unblock</b></a>
+                        {% endif %}
+                    </td>
                 </tr>
                 {% endfor %}
-
             </table>
         </div>
     </div>

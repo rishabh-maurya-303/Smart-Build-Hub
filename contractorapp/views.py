@@ -5,6 +5,8 @@ from homeownerapp.models import *
 from .models import *
 from decimal import Decimal
 from django.views.decorators.cache import cache_control
+from homeownerapp.models import Project, UserInfo
+
 
 # Create your views here.
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
@@ -14,9 +16,29 @@ def contractordash(request):
         return redirect('signin')
     contractorid = request.session.get('contractorid')
     contractor = UserInfo.objects.filter(email=contractorid).first()
+
+    my_applications = ContractorApplication.objects.filter(contractor=contractor)
+    assigned_projects_count = my_applications.filter(status='approved').exclude(project__status='completed').count()
+    completed_projects_count = my_applications.filter(status='approved', project__status='completed').count()
+
     context = {
         'name':contractor.name,
         'contractorid':contractorid,
+        'total_applications': my_applications.count(),
+        'approved_applications': my_applications.filter(status='approved').count(),
+        'pending_applications': my_applications.filter(status='pending').count(),
+        'rejected_applications': my_applications.filter(status='rejected').count(),
+        
+        # Project metrics 
+        'assigned_projects': assigned_projects_count,
+        'completed_projects': completed_projects_count,
+        
+        # Marketplace metrics (assuming 'planned' means open for bidding)
+        'new_projects_available': Project.objects.filter(status='planned').count(),
+        
+        # Rating placeholders
+        'avg_rating': 0, 
+        'feedback_count': 0,
     }
     return render(request,'contractordash.html',context)
 

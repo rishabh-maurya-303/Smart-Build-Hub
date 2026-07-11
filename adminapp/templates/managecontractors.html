@@ -23,16 +23,21 @@
                     <td class="ht">{{c.email}}</td>
                     <td class="ht">
                         {% if c.picture %}
-                        <img src="{{h.picture.url}}" alt="" height="80px">
+                        <img src="{{c.picture.url}}" alt="" height="80px">
                         {% else %}
                         No Profile
                         {% endif %}
                     </td>
                     <td class="ht">{{c.address}}</td>
-                    <td class="ht"><a href="" class="btn btn-danger"><b>Block</b></a></td>
+                    <td class="ht">
+                        {% if c.login.status == 'active' %}
+                        <a href="{% url 'toggle_status' c.id %}" class="btn btn-danger"><b>Block</b></a>
+                        {% else %}
+                        <a href="{% url 'toggle_status' c.id %}" class="btn btn-success"><b>Unblock</b></a>
+                        {% endif %}
+                    </td>
                 </tr>
                 {% endfor %}
-
             </table>
         </div>
     </div>

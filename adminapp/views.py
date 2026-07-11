@@ -4,6 +4,8 @@ from sbhapp.models import *
 from homeownerapp.models import *
 from contractorapp .models import *
 from django.views.decorators.cache import cache_control
+from django.shortcuts import get_object_or_404
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
@@ -106,6 +108,25 @@ def managehomeowners(request):
     homeowners = UserInfo.objects.filter(login__usertype = 'homeowner') 
     return render(request,'managehomeowners.html',{'homeowners':homeowners,'adminid':adminid})
 
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+def toggle_user_status(request, user_id):
+    if 'adminid' not in request.session:
+        messages.error(request, "You are not logged in")
+        return redirect('adminlogin')
+        
+    user_info = get_object_or_404(UserInfo, id=user_id)
+    
+    # Toggle based on your actual string field
+    if user_info.login.status == 'active':
+        user_info.login.status = 'blocked'
+        messages.success(request, f"{user_info.name} has been blocked.")
+    else:
+        user_info.login.status = 'active'
+        messages.success(request, f"{user_info.name} has been unblocked.")
+        
+    user_info.login.save()
+    
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
 
 
 from django.urls import path

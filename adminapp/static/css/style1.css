@@ -156,7 +156,7 @@ body {
    transition: .5s;
 }
 .hr:hover{
-   transform: scale(1.02);
+   /* transform: scale(1.02); */
    color: #ff6900;
 }
 
@@ -165,7 +165,7 @@ body {
    color: white !important;
 }
 .ht:hover{
-   transform: scale(1.02);
+   /* transform: scale(1.02); */
    color: #ff6900 !important;
 }
 

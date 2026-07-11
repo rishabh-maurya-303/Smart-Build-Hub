@@ -8,79 +8,85 @@
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
        <a href="{% url 'assignedprojects' %}">
          <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-diagram-project fa-xl"></i> Assigned Progects</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-diagram-project fa-xl"></i> Assigned Projects</b></b></p>
             <hr class="m-0">
-            <p style="font-size: 40px;">5</p>
+            <p style="font-size: 40px;">{{ assigned_projects }}</p>
             <p>Total projects currently assigned to you</p>
         </div>
        </a>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
         <a href="{% url 'contractorapplications' %}">
             <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Application Submited</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-file-contract fa-xl"></i> Applications Submitted</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">1</p>
-            <p>All proposals you've submited</p>
+            <p style="font-size:40px;">{{ total_applications }}</p>
+            <p>All proposals you've submitted</p>
         </div>
         </a>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
         <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-check fa-xl"></i> Completed Projects</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-check-double fa-xl"></i> Completed Projects</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">2</p>
+            <p style="font-size:40px;">{{ completed_projects }}</p>
             <p>Successfully finished projects</p>
         </div>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
         <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Average rating</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-star fa-xl"></i> Average Rating</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">0</p>
-            <p>Based on 3 feedbacks</p>
+            <p style="font-size:40px;">{{ avg_rating }}</p>
+            <p>Based on {{ feedback_count }} feedbacks</p>
         </div>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
          <a href="{% url 'contractorapplications' %}">
         <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Approved Applications</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-circle-check fa-xl"></i> Approved Applications</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">0</p>
+            <p style="font-size:40px;">{{ approved_applications }}</p>
             <p>Approved projects</p>
         </div>
          </a>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
           <a href="{% url 'contractorapplications' %}">
         <div class="card text-light h-100">
             <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Pending Approvals</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">0</p>
-            <p>Awating your decision</p>
+            <p style="font-size:40px;">{{ pending_applications }}</p>
+            <p>Awaiting homeowner decision</p>
         </div>
         </a>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
          <a href="{% url 'contractorapplications' %}">
         <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> Rejected Application</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-circle-xmark fa-xl"></i> Rejected Applications</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">0</p>
-            <p>All rejected application</p>
+            <p style="font-size:40px;">{{ rejected_applications }}</p>
+            <p>All rejected applications</p>
         </div>
         </a>
     </div>
+    
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
         <a href="{% url 'contractorviewprojects' %}">
             <div class="card text-light h-100">
-            <p class="mt-2"><b><b><i class="fa-solid fa-clock fa-xl"></i> New Projects</b></b></p>
+            <p class="mt-2"><b><b><i class="fa-solid fa-briefcase fa-xl"></i> New Projects</b></b></p>
             <hr class="m-0">
-            <p style="font-size:40px;">0</p>
+            <p style="font-size:40px;">{{ new_projects_available }}</p>
             <p>All new projects available</p>
         </div>
         </a>
     </div>
 </div>
 {% endblock %}
-

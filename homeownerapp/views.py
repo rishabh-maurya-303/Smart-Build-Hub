@@ -15,17 +15,18 @@ def homeownerdash(request):
         return redirect('signin')
     homeownerid = request.session.get('homeownerid')
     homeowner = UserInfo.objects.filter(email=homeownerid).first()
+    user_projects = Project.objects.filter(homeowner=homeowner)
     context = {
         'name':homeowner.name,
         'homeownerid':homeownerid,
-        'tp': Project.objects.all().count(),
-        'top': Project.objects.filter(status="under_construction").count(),
-        'tcp': Project.objects.filter(status="completed").count(),
-        'tpa': Project.objects.filter(status="awaiting_approval").count(),
-        'tpp': Project.objects.filter(status="planned").count(),
-        'dp': Project.objects.filter(status="designing_phase").count(),
-        'tdp': Project.objects.filter(status="delayed").count(),
-        'tpc': Project.objects.filter(status="cancelled").count(),
+        'tp': user_projects.count(),
+        'top': user_projects.filter(status="under_construction").count(),
+        'tcp': user_projects.filter(status="completed").count(),
+        'tpa': user_projects.filter(status="awaiting_approval").count(),
+        'tpp': user_projects.filter(status="planned").count(),
+        'dp': user_projects.filter(status="designing_phase").count(),
+        'tdp': user_projects.filter(status="delayed").count(),
+        'tpc': user_projects.filter(status="cancelled").count(),
     }
     return render(request,'homeownerdash.html',context)
 

@@ -1,6 +1,5 @@
 # Environment & secrets
 .env
-secret.txt
 
 # Database
 db.sqlite3
@@ -9,5 +8,5 @@ db.sqlite3
 __pycache__/
 *.pyc
 
-# Data
-data.json
+staticfiles/
+media/

@@ -37,3 +37,5 @@ urlpatterns = [
     path('homeowner/',include('homeownerapp.hurls')),        #this file will contains the homeownerapp 
     path('contractor/',include('contractorapp.curls')),      #this file will contains the contractorapp
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

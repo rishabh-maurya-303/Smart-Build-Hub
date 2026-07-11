@@ -29,3 +29,17 @@ dist/
 media/
 *.log
 *.env
+
+
+venv
+.env
+.git
+__pycache__
+*.pyc
+node_modules
+media
+staticfiles
+*.mp4
+*.zip
+*.pth
+*.pt

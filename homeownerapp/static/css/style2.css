@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 
@@ -10,7 +10,7 @@ body {
    background-attachment: fixed;
 }
 
-.bd1{
+.bd1 {
    background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -45,27 +45,27 @@ body {
 }
 
 .card {
-   
+
    background-color: #1e1e1e !important;
    border: 1px solid transparent;
    background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
-              linear-gradient(to right, orange, purple) border-box;
+      linear-gradient(to right, orange, purple) border-box;
    border-radius: 12px;
    box-shadow: 0 0 6px rgba(255, 165, 0, 0.3);
    transition: .5s;
    display: grid;
    gap: .3rem;
    padding: 1rem;
-   height: auto; 
+   height: auto;
    padding: 1rem 1.2rem;
    font-size: 0.9rem;
    border-radius: 0px 20px 0px 20px;
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
-  transition: 0.3s ease;
+   transform: scale(1.02);
+   box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
+   transition: 0.3s ease;
 }
 
 .hv1 {
@@ -76,7 +76,7 @@ body {
 
 .hv1:hover {
    color: #ff6900 !important;
-   transform: scale(1.1,1.1);
+   transform: scale(1.1, 1.1);
 }
 
 .hv2:hover {
@@ -110,40 +110,43 @@ body {
 
 
 /* Highlight active menu item in orange */
-.pc-item.active > .pc-link {
-  background-color: #ff6b01d7 !important;  /* Orange highlight */
-  color: #ffffff !important;             /* White text */
-  font-weight: 600;
+.pc-item.active>.pc-link {
+   background-color: #ff6b01d7 !important;
+   /* Orange highlight */
+   color: #ffffff !important;
+   /* White text */
+   font-weight: 600;
 }
 
 /* Make icons white inside the active item */
 .pc-item.active i {
-  color: #ffffff !important;
+   color: #ffffff !important;
 }
 
 
-.place{
+.place {
    margin-bottom: 30px;
-   border:2px solid #ff6900 ;
+   border: 2px solid #ff6900;
 }
 
 /* full card */
- .card-form {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.2);
-  /* background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+.card-form {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 30px;
+   border-radius: 20px;
+   box-shadow: 0 4px 20px rgba(255, 102, 0, 0.2);
+   /* background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
               linear-gradient(to right, orange, purple) border-box; */
-  margin-top: 40px;
+   margin-top: 40px;
    transition: 0.5s ease;
-} 
- .card-form:hover {
-  transform: scale(1.05);
-  background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
-              linear-gradient(to right, orange, purple) border-box; 
-  box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
-} 
+}
+
+.card-form:hover {
+   transform: scale(1.05);
+   background: linear-gradient(#1f1f1f, #1f1f1f) padding-box,
+      linear-gradient(to right, orange, purple) border-box;
+   box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
+}
 
 /* .card-form {
   background-color: rgba(0, 0, 0, 0.5);
@@ -156,31 +159,62 @@ body {
   margin-top: 3%;
 } */
 
-.hr{
+.hr {
    transition: .5s;
 }
-.hr:hover{
-   transform: scale(1.02);
+
+.hr:hover {
+   /* transform: scale(1.02); */
    color: #ff6900;
 }
 
-.ht{
+.ht {
    transition: .5s;
    color: white !important;
 }
-.ht:hover{
-   transform: scale(1.02);
+
+.ht:hover {
+   /* transform: scale(1.02); */
    color: #ff6900 !important;
 }
 
-.place{
+.place {
    border: 2px solid #ff6900 !important;
 }
 
-.form-control{
+.form-control {
    border: 2px solid #ff6900 !important;
 }
 
- /* .table-responsive::-webkit-scrollbar{
- scrollbar-track-color: #ff6900 !important;
-}  */
+.table-responsive::-webkit-scrollbar {
+   height: 12px;
+   /* Height of the horizontal scrollbar */
+   width: 12px;
+   /* Width of the vertical scrollbar */
+}
+
+.table-responsive::-webkit-scrollbar-track {
+   background: #2a2a2a;
+   /* Dark grey track/background */
+   border-radius: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+   background-color: #000000;
+   /* Pure black scrollbar */
+   border-radius: 8px;
+   border: 2px solid #dbd3d3;
+   /* Adds a nice little border around the thumb */
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+   background-color: #ff6900;
+   /* Optional: Changes to your theme orange on hover! */
+}
+
+/* Custom Scrollbar for Firefox */
+.table-responsive {
+   scrollbar-width: thin;
+   scrollbar-color: #000000 #2a2a2a;
+   /* thumb color | track color */
+}

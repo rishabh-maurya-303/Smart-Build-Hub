@@ -161,7 +161,7 @@ body {
    transition: .5s;
 }
 .hr:hover{
-   transform: scale(1.02);
+   /* transform: scale(1.02); */
    color: #ff6900;
 }
 
@@ -170,6 +170,39 @@ body {
    color: white !important;
 }
 .ht:hover{
-   transform: scale(1.02);
+   /* transform: scale(1.02); */
    color: #ff6900 !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+   height: 12px;
+   /* Height of the horizontal scrollbar */
+   width: 12px;
+   /* Width of the vertical scrollbar */
+}
+
+.table-responsive::-webkit-scrollbar-track {
+   background: #2a2a2a;
+   /* Dark grey track/background */
+   border-radius: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+   background-color: #000000;
+   /* Pure black scrollbar */
+   border-radius: 8px;
+   border: 2px solid #dbd3d3;
+   /* Adds a nice little border around the thumb */
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+   background-color: #ff6900;
+   /* Optional: Changes to your theme orange on hover! */
+}
+
+/* Custom Scrollbar for Firefox */
+.table-responsive {
+   scrollbar-width: thin;
+   scrollbar-color: #000000 #2a2a2a;
+   /* thumb color | track color */
 }
