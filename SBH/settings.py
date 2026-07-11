@@ -33,7 +33,7 @@ allowed_hosts = os.getenv("ALLOWED_HOSTS")
 if allowed_hosts:
     ALLOWED_HOSTS = [host.strip() for host in allowed_hosts.split(",") if host.strip()]
 else:
-    ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+    ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -94,9 +94,16 @@ WSGI_APPLICATION = 'SBH.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     "default": dj_database_url.config(
+#         default="sqlite:///db.sqlite3",
+#         conn_max_age=600,
+#     )
+# }
+
 DATABASES = {
     "default": dj_database_url.config(
-        default="sqlite:///db.sqlite3",
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
         conn_max_age=600,
     )
 }
