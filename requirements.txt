@@ -7,3 +7,4 @@ whitenoise==6.9.0
 django-tailwind==4.4.2
 Authlib==1.6.8
 Pillow==11.3.0
+requests==2.32.4
