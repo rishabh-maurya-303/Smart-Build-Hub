@@ -33,7 +33,11 @@ allowed_hosts = os.getenv("ALLOWED_HOSTS")
 if allowed_hosts:
     ALLOWED_HOSTS = [host.strip() for host in allowed_hosts.split(",") if host.strip()]
 else:
-    ALLOWED_HOSTS = ["*"]
+    ALLOWED_HOSTS = [
+            "smart-build-hub.up.railway.app",
+    "127.0.0.1",
+    "localhost",
+    ]
 
 # Application definition
 
@@ -52,9 +56,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
 
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

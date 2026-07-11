@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn SBH.wsgi:application --bind 0.0.0.0:${PORT:-8080} --access-logfile -"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && gunicorn SBH.wsgi:application --bind 0.0.0.0:${PORT:-8080} --access-logfile - --error-logfile -"]
